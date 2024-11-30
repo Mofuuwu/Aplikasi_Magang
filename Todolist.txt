@@ -1,0 +1,22 @@
+Todolist :
+
+Membuat Role Untuk :
+1. Siswa Yg Aktif
+    Siswa Aktif = Sudah Mengisi Data Diri Dan Sudah Memiliki Data Magang
+    Siswa Aktif = Siswa Magang
+    Perizinan = Mengakses Halaman Data Diri, Mengakses Halaman Data Magang
+
+2. Siswa Yg Tidak Aktif
+    Siswa Tidak Aktif = Belum Mengisi Data Diri Dan Belum Memiliki Data Magang
+    Perizinan = Cuma Mengakses Halaman untuk mengisi Data Diri
+
+//Soon : 
+//3. Pembimbing
+//4. Admin
+
+Membuat Fitur Untuk : 
+1. Siswa Dapat Mengedit Data Siswa
+
+
+//Update Terakhir :
+1. Menambahkan Fitur Logbook, masih belum sempurna karena user masih bisa mengedit logbook milik user lain

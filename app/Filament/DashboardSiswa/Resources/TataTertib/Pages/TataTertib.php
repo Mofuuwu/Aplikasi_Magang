@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\IntershipStudentDataResource\Pages;
+namespace App\Filament\DashboardSiswa\Resources\TataTertib\Pages;
 
-use App\Filament\Resources\IntershipStudentDataResource;
+use App\Filament\DashboardSiswa\Resources\TataTertibResource;
 use App\Models\IntershipStudent;
 use App\Models\Mentor;
 use App\Models\Rule;
@@ -10,12 +10,12 @@ use App\Models\Student;
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Facades\Auth;
 
-class IntershipStudentData extends Page
+class TataTertib extends Page
 {
-    protected static string $resource = IntershipStudentDataResource::class;
+    protected static string $resource = TataTertibResource::class;
     protected ?string $heading = 'Data Magang Anda';
 
-    protected static string $view = 'filament.resources.intership-student-data-resource.pages.intership-student-data';
+    protected static string $view = 'filament.pages.siswa.tata_tertib';
 
     public $dataMagangSiswa;
     public $dataSiswa;

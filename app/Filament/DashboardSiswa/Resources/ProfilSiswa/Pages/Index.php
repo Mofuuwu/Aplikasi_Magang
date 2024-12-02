@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Filament\Resources\StudentProfileResource\Pages;
+namespace App\Filament\DashboardSiswa\Resources\ProfilSiswa\Pages;
 
-use App\Filament\Resources\StudentProfileResource;
+
+use App\Filament\DashboardSiswa\Resources\ProfilSiswaResouce;
 use Filament\Resources\Pages\Page;
-use App\Models\Student; // Import model Student
+use App\Models\Student; 
 use Illuminate\Support\Facades\Auth;
 
-class StudentProfile extends Page
+class Index extends Page
 {
     protected ?string $heading = 'Profil Anda';
-    protected static string $resource = StudentProfileResource::class;
+    protected static string $resource = ProfilSiswaResouce::class;
 
     protected static bool $breadcrumbs = false;
-    protected static string $view = 'filament.resources.student-profile-resource.pages.student-profile';
+    protected static string $view = 'filament.siswa.pages.profil_siswa';
 
     public $userName;
     public $studentData; // Properti untuk data siswa

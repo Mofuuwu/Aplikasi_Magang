@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\DashboardSiswa\Resources;
 
-use App\Filament\Resources\StudentProfileResource\Pages;
-use App\Filament\Resources\StudentProfileResource\RelationManagers;
+use App\Filament\DashboardSiswa\Resources\ProfilSiswa\Pages;
+use App\Filament\DashboardSiswa\Resources\ProfilSiswaResouce\RelationManagers;
 use App\Models\Student;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -13,12 +13,11 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class StudentProfileResource extends Resource
+class ProfilSiswaResouce extends Resource
 {
     
     protected static ?bool $breadcrumbs = false;
     protected static ?int $navigationSort = 1;
-    protected static ?string $navigationGroup = 'Kelola Data';
     protected static ?string $pluralModelLabel = 'Profil Anda';
     protected static ?string $navigationLabel = 'Profil Anda';
     protected static ?string $model = Student::class;
@@ -30,7 +29,8 @@ class StudentProfileResource extends Resource
         return $form
             ->schema([
                 //
-            ]);
+            ])
+            ;
     }
 
     public static function table(Table $table): Table
@@ -49,7 +49,7 @@ class StudentProfileResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\StudentProfile::route('/'),
+            'index' => Pages\Index::route('/'),
             // 'create' => Pages\CreateStudentProfile::route('/create'),
             // 'edit' => Pages\EditStudentProfile::route('/{record}/edit'),
         ];

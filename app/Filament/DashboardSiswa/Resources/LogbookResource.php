@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\DashboardSiswa\Resources;
 
-use App\Filament\Resources\LogbookResource\Pages;
-use App\Filament\Resources\LogbookResource\RelationManagers;
+use App\Filament\DashboardSiswa\Resources\Logbook\Pages;
+use App\Filament\DashboardSiswa\Resources\LogbookResource\RelationManagers;
 use App\Models\IntershipStudent;
 use App\Models\Logbook;
 use App\Models\Student;

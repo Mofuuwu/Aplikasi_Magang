@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\StudentProfileResource\Pages;
+namespace App\Filament\DashboardSiswa\Resources\ProfilSiswa\Pages;
 
-use App\Filament\Resources\StudentProfileResource;
+
+use App\Filament\DashboardSiswa\Resources\ProfilSiswaResouce;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
 class ListStudentProfiles extends ListRecords
 {
-    protected static string $resource = StudentProfileResource::class;
+    protected static string $resource = ProfilSiswaResouce::class;
 
     protected function getHeaderActions(): array
     {

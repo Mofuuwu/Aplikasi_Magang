@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\LogbookResource\Pages;
+namespace App\Filament\DashboardSiswa\Resources\Logbook\Pages;
 
-use App\Filament\Resources\LogbookResource;
+use App\Filament\DashboardSiswa\Resources\LogbookResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 

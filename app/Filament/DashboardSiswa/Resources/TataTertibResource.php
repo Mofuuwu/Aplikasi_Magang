@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\DashboardSiswa\Resources;
 
-use App\Filament\Resources\IntershipStudentDataResource\Pages;
-use App\Filament\Resources\IntershipStudentDataResource\RelationManagers;
+use App\Filament\DashboardSiswa\Resources\TataTertib\Pages;
+use App\Filament\DashboardSiswa\Resources\TataTertibResource\RelationManagers;
 use App\Models\IntershipStudent;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -13,7 +13,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class IntershipStudentDataResource extends Resource
+class TataTertibResource extends Resource
 {
     protected static ?string $model = IntershipStudent::class;
 
@@ -57,9 +57,7 @@ class IntershipStudentDataResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\IntershipStudentData::route('/'),
-            'create' => Pages\CreateIntershipStudentData::route('/create'),
-            'edit' => Pages\EditIntershipStudentData::route('/{record}/edit'),
+            'index' => Pages\TataTertib::route('/'),
         ];
     }
 }
